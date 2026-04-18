@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+    <g fill="#1A1A1A">
+        <!-- Modern Line-art Building Icon -->
+        <path d="M40 70 V90 H55 V75 H65 V90 H80 V70 L60 50 Z" stroke="#1A1A1A" stroke-width="4" stroke-linejoin="round" fill="none"/>
+        <path d="M45 50 L60 35 L75 50" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        
+        <!-- Text Lockup -->
+        <text x="100" y="62" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="800" text-anchor="start" dominant-baseline="middle" letter-spacing="1">RENT &amp; SELL</text>
+        <text x="100" y="88" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start" dominant-baseline="middle" letter-spacing="4" fill="#666666">REALITY</text>
+    </g>
+</svg>

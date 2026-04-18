@@ -1,0 +1,441 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services | Nextology Innovation — Mobile, Web, Cloud, AI & Marketing</title>
+    <meta name="description" content="Explore all 8 services offered by Nextology Innovation: Mobile App Development, Web Development, Cloud & DevOps, AI & Chatbot, Digital Marketing, Social Media, AR/VR, and Product Development." />
+
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link href="assets/fonts/fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/menu.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+        .service-card {
+            background: #fff;
+            border: 1px solid #f0ede8;
+            border-radius: 20px;
+            padding: 36px 30px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            height: 100%;
+        }
+        .service-card:hover {
+            border-color: #ff5e3a;
+            box-shadow: 0 10px 40px rgba(255, 94, 58, 0.12);
+            transform: translateY(-4px);
+        }
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            min-height: 60px;
+            background: #f8f4f0;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            line-height: 1;
+            overflow: hidden;
+            transition: background 0.3s;
+        }
+        .service-card:hover .service-icon { background: #ff5e3a; }
+        .service-card:hover .service-icon .service-emoji { filter: brightness(0) invert(1); }
+        .service-card h4 { font-size: 20px; font-weight: 700; color: #111; transition: color 0.3s; }
+        .service-card:hover h4 { color: #ff5e3a; }
+        .service-card p { color: #666; font-size: 15px; line-height: 1.6; }
+        .service-card a.learn-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #111;
+            font-weight: 600;
+            font-size: 14px;
+            margin-top: auto;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .service-card:hover a.learn-more { color: #ff5e3a; }
+        .service-tag {
+            display: inline-block;
+            background: #f8f4f0;
+            border-radius: 50px;
+            padding: 4px 14px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 4px;
+        }
+        .process-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 12px;
+        }
+        .process-number {
+            width: 56px;
+            height: 56px;
+            background: #ff5e3a;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper relative z-[1] bg-white">
+        <!-- Header -->
+        <header class="site-header site-header--absolute is--white py-3" id="sticky-menu">
+            <div class="global-container">
+                <div class="flex items-center justify-between gap-x-8">
+                    <a href="index.html">
+                        <img src="assets/img/logo-dark.png" alt="Nextology Innovation" width="96" height="24" />
+                    </a>
+                    <div class="menu-block-wrapper">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu-block" id="append-menu-header">
+                            <div class="mobile-menu-head">
+                                <div class="go-back">
+                                    <img class="dropdown-icon" src="assets/img/icon-black-long-arrow-right.svg" alt="back" width="16" height="16" />
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                                                        <ul class="site-menu-main">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link-item">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link-item">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="services.html" class="nav-link-item">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="portfolio.html" class="nav-link-item">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pricing.html" class="nav-link-item">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link-item">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="faq-2.html" class="nav-link-item">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link-item">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="book-a-call.html" class="button hidden rounded-[50px] border-black bg-black text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block">Book a Call</a>
+                        <div class="block lg:hidden">
+                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                <span></span><span></span><span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-wrapper relative overflow-hidden">
+            <!-- Breadcrumb -->
+            <section id="section-breadcrumb">
+                <div class="breadcrumb-wrapper">
+                    <div class="global-container">
+                        <div class="breadcrumb-block">
+                            <h1 class="breadcrumb-title">Our Services</h1>
+                            <ul class="breadcrumb-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li>Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Intro -->
+            <section class="pt-10 pb-6">
+                <div class="global-container">
+                    <div class="jos mb-12 text-center">
+                        <div class="mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-[820px]">
+                            <h2 class="mb-5">Where Conventional Thinking Ends &amp; Innovation Begins</h2>
+                            <p class="text-lg text-gray-500">We offer a full spectrum of digital services — from ideation to deployment and beyond. Our expert teams bring your vision to life with precision, creativity, and deep technical knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- All 8 Services Grid -->
+            <section class="service-section bg-white py-12 pb-20">
+                <div class="global-container">
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+                        <!-- 1. Mobile App -->
+                        <div class="jos" data-jos_animation="fade-up" data-jos_delay="0.1">
+                            <div class="service-card">
+                                <div class="service-icon">📱</div>
+                                <span class="service-tag">Development</span>
+                                <h4>Mobile App Development</h4>
+                                <p>Build powerful, high-performance mobile apps with stunning UI/UX for iOS and Android platforms — native or cross-platform.</p>
+                                <a href="book-a-call.html" class="learn-more">Start a Project →</a>
+                            </div>
+                        </div>
+
+                        <!-- 2. Web Dev -->
+                        <div class="jos" data-jos_animation="fade-up" data-jos_delay="0.15">
+                            <div class="service-card">
+                                <div class="service-icon">🌐</div>
+                                <span class="service-tag">Development</span>
+                                <h4>Web Development</h4>
+                                <p>Create fast, responsive, scalable websites and web applications that engage visitors and drive business growth.</p>
+                                <a href="book-a-call.html" class="learn-more">Start a Project →</a>
+                            </div>
+                        </div>
+
+                        <!-- 3. Digital Marketing -->
+                        <div class="jos" data-jos_animation="fade-up" data-jos_delay="0.2">
+                            <div class="service-card">
+                                <div class="service-icon">📈</div>
+                                <span class="service-tag">Marketing</span>
+                                <h4>Digital Marketing</h4>
+                                <p>Drive qualified traffic and generate leads with data-driven SEO, PPC, content marketing, and email automation strategies.</p>
+                                <a href="book-a-call.html" class="learn-more">Start a Project →</a>
+                            </div>
+                        </div>
+
+                        <!-- 4. Social Media -->
+                        <div class="jos" data-jos_animation="fade-up" data-jos_delay="0.25">
+                            <div class="service-card">
+                                <div class="service-icon">💬</div>
+                                <span class="service-tag">Marketing</span>
+                                <h4>Social Media Marketing</h4>
+                                <p>Grow your brand presence, engage your audience, and build a loyal community across all major social platforms.</p>
+                                <a href="book-a-call.html" class="learn-more">Start a Project →</a>
+                            </div>
+                        </div>
+
+                        <!-- 5. Product Dev -->
+                        <div class="jos" data-jos_animation="fade-up" data-jos_delay="0.3">
+                            <div class="service-card">
+                                <div class="service-icon">📦</div>
+                                <span class="service-tag">Development</span>
+                                <h4>Product Development</h4>
+                                <p>From concept to market-ready — we design, develop, and launch digital products using agile methodologies and rapid iteration.</p>
+                                <a href="book-a-call.html" class="learn-more">Start a Project →</a>
+                            </div>
+                        </div>
+
+                        <!-- 6. Cloud & DevOps -->
+                        <div class="jos" data-jos_animation="fade-up" data-jos_delay="0.35">
+                            <div class="service-card">
+                                <div class="service-icon">☁️</div>
+                                <span class="service-tag">Infrastructure</span>
+                                <h4>Cloud &amp; DevOps Solutions</h4>
+                                <p>Scalable cloud infrastructure, CI/CD pipelines, containerization, and automated deployment for seamless operations at scale.</p>
+                                <a href="book-a-call.html" class="learn-more">Start a Project →</a>
+                            </div>
+                        </div>
+
+                        <!-- 7. AR/VR -->
+                        <div class="jos" data-jos_animation="fade-up" data-jos_delay="0.4">
+                            <div class="service-card">
+                                <div class="service-icon">🥽</div>
+                                <span class="service-tag">Emerging Tech</span>
+                                <h4>AR/VR Solutions</h4>
+                                <p>Deliver immersive augmented and virtual reality experiences that transform how your customers engage with your products.</p>
+                                <a href="book-a-call.html" class="learn-more">Start a Project →</a>
+                            </div>
+                        </div>
+
+                        <!-- 8. AI & Chatbot -->
+                        <div class="jos" data-jos_animation="fade-up" data-jos_delay="0.45">
+                            <div class="service-card">
+                                <div class="service-icon">🤖</div>
+                                <span class="service-tag">AI</span>
+                                <h4>AI &amp; Chatbot Development</h4>
+                                <p>Intelligent AI solutions and conversational chatbots that automate support, qualify leads, and enhance the customer experience 24/7.</p>
+                                <a href="book-a-call.html" class="learn-more">Start a Project →</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Process Section -->
+            <section class="process-section bg-black" style="padding-top: 100px; padding-bottom: 120px;">
+                <div class="global-container">
+                    <div class="jos mb-14 text-center">
+                        <div class="mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-[680px]">
+                            <h2 class="text-white mb-4">How We Work</h2>
+                            <p class="text-white opacity-60 text-lg">A proven 5-step process that consistently delivers exceptional results — on time and within budget.</p>
+                        </div>
+                    </div>
+                    <!-- Steps Grid -->
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        <!-- Step 1 -->
+                        <div class="jos group rounded-2xl" data-jos_delay="0.1" style="background: #111; border: 1px solid rgba(255,255,255,0.08); padding: 40px; position: relative; overflow: hidden; transition: border-color 0.3s ease; cursor: pointer;" onmouseover="this.style.borderColor='#FF5E3A'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">
+                            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255, 94, 58, 0.15); color: #FF5E3A; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; margin-bottom: 24px;">1</div>
+                            <h4 style="color: #fff; font-size: 22px; font-weight: bold; margin-bottom: 12px;">Discovery</h4>
+                            <p style="color: rgba(255,255,255,0.65); font-size: 16px; line-height: 1.6;">We dive deep into your business goals, audience, and requirements to set a solid foundation.</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="jos group rounded-2xl" data-jos_delay="0.15" style="background: #111; border: 1px solid rgba(255,255,255,0.08); padding: 40px; position: relative; overflow: hidden; transition: border-color 0.3s ease; cursor: pointer;" onmouseover="this.style.borderColor='#FF5E3A'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">
+                            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255, 94, 58, 0.15); color: #FF5E3A; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; margin-bottom: 24px;">2</div>
+                            <h4 style="color: #fff; font-size: 22px; font-weight: bold; margin-bottom: 12px;">Design</h4>
+                            <p style="color: rgba(255,255,255,0.65); font-size: 16px; line-height: 1.6;">We create intuitive wireframes, interactive prototypes, and visual designs you'll love.</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="jos group rounded-2xl" data-jos_delay="0.2" style="background: #111; border: 1px solid rgba(255,255,255,0.08); padding: 40px; position: relative; overflow: hidden; transition: border-color 0.3s ease; cursor: pointer;" onmouseover="this.style.borderColor='#FF5E3A'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">
+                            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255, 94, 58, 0.15); color: #FF5E3A; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; margin-bottom: 24px;">3</div>
+                            <h4 style="color: #fff; font-size: 22px; font-weight: bold; margin-bottom: 12px;">Build</h4>
+                            <p style="color: rgba(255,255,255,0.65); font-size: 16px; line-height: 1.6;">Our engineers write clean, scalable code using the best modern technology stack.</p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="jos group rounded-2xl md:col-start-1 lg:col-start-auto" data-jos_delay="0.25" style="background: #111; border: 1px solid rgba(255,255,255,0.08); padding: 40px; position: relative; overflow: hidden; transition: border-color 0.3s ease; cursor: pointer;" onmouseover="this.style.borderColor='#FF5E3A'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">
+                            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255, 94, 58, 0.15); color: #FF5E3A; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; margin-bottom: 24px;">4</div>
+                            <h4 style="color: #fff; font-size: 22px; font-weight: bold; margin-bottom: 12px;">Deploy</h4>
+                            <p style="color: rgba(255,255,255,0.65); font-size: 16px; line-height: 1.6;">We launch to production with zero downtime, fully tested, secured, and optimized.</p>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="jos group rounded-2xl md:col-start-2 lg:col-start-auto" data-jos_delay="0.3" style="background: #111; border: 1px solid rgba(255,255,255,0.08); padding: 40px; position: relative; overflow: hidden; transition: border-color 0.3s ease; cursor: pointer;" onmouseover="this.style.borderColor='#FF5E3A'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)'">
+                            <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255, 94, 58, 0.15); color: #FF5E3A; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: bold; margin-bottom: 24px;">5</div>
+                            <h4 style="color: #fff; font-size: 22px; font-weight: bold; margin-bottom: 12px;">Support</h4>
+                            <p style="color: rgba(255,255,255,0.65); font-size: 16px; line-height: 1.6;">Ongoing maintenance, active monitoring, and continuous improvements post-launch.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="py-20 xl:py-[130px]">
+                <div class="global-container">
+                    <div class="jos rounded-[30px] bg-colorLinenRuffle p-10 text-center lg:p-16 xl:p-20">
+                        <h2 class="mb-6">Ready to Start Your Project?</h2>
+                        <p class="text-gray-500 text-lg max-w-2xl mx-auto mb-8">Tell us what you're building and we'll get back to you with a tailored strategy and quote within 24 hours.</p>
+                        <a href="book-a-call.html" class="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">Book a Free Consultation →</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
+            <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
+                <div class="overflow-hidden">
+                    <div class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap">
+                        <img src="assets/img/th-1/footer-text-slider-icon.svg" alt="footer-icon" width="60" height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+                        <div class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">Let's Build Something Remarkable</div>
+                        <img src="assets/img/th-1/footer-text-slider-icon.svg" alt="footer-icon" width="60" height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+                        <div class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">Let's Build Something Remarkable</div>
+                    </div>
+                </div>
+            </div>
+            <div class="global-container">
+                <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+                <div class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
+                    <div class="flex flex-col gap-y-6">
+                        <a href="index.html" class="inline-block"><img src="assets/img/th-1/logo.png" alt="Nextology Innovation" width="96" height="24" /></a>
+                        <p>Nextology Innovation pioneers the future of cloud computing and digital transformation, delivering enterprise-grade solutions for businesses worldwide.</p>
+                        <p>Email: <a href="mailto:contact@nextologyinnovations.com">contact@nextologyinnovations.com</a><br />Phone: <a href="tel:+918925017127">+91 89250 17127</a></p>
+                    </div>
+                    <div class="flex flex-col gap-y-6">
+                        <h4 class="text-[21px] font-semibold capitalize text-black">Primary Pages</h4>
+                        <ul class="flex flex-col gap-y-[10px] capitalize">
+                        <ul class="flex flex-col gap-y-[10px] capitalize">
+                            <li>
+                                <a href="index.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">About Us</a>
+                            </li>
+                            <li>
+                                <a href="services.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Services</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="blog.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Blog</a>
+                            </li>
+                            <li>
+                                <a href="faq-2.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-y-6">
+                        <h4 class="text-[21px] font-semibold capitalize text-black">Our Services</h4>
+                        <ul class="flex flex-col gap-y-[10px] capitalize">
+                            <li><a href="services.html" class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Mobile App Development</a></li>
+                            <li><a href="services.html" class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Web Development</a></li>
+                            <li><a href="services.html" class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Cloud &amp; DevOps</a></li>
+                            <li><a href="services.html" class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">AI &amp; Chatbot Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-y-6">
+                        <h4 class="text-[21px] font-semibold capitalize text-black">Get in Touch</h4>
+                        <ul class="flex flex-col gap-y-3">
+                            <li>172A, Bharathipuram, Chrompet, Chennai, India</li>
+                            <li><a href="mailto:contact@nextologyinnovations.com" class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">contact@nextologyinnovations.com</a></li>
+                            <li><a href="tel:+918925017127" class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">+91 89250 17127</a></li>
+                        </ul>
+                        <div class="flex gap-4 mt-2">
+                            <a href="https://www.instagram.com/nextologyinnovation" target="_blank" class="hover:text-colorOrangyRed">Instagram</a>
+                            <a href="https://in.linkedin.com/company/nextology-innovations" target="_blank" class="hover:text-colorOrangyRed">LinkedIn</a>
+                            <a href="https://www.facebook.com/share/1UL7126grh/" target="_blank" class="hover:text-colorOrangyRed">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+                <div class="py-9 text-center">
+                    <p>&copy; Copyright 2025, All Rights Reserved by Nextology Innovation</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

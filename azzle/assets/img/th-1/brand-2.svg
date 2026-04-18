@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+    <g fill="#1A1A1A">
+        <!-- Modern Hexagon / Forge Icon -->
+        <path d="M60 35 L40 45 L40 75 L60 85 L80 75 L80 45 Z" stroke="#1A1A1A" stroke-width="4" stroke-linejoin="round" fill="none"/>
+        <circle cx="60" cy="60" r="8" fill="#1A1A1A"/>
+        
+        <!-- Text Lockup -->
+        <text x="100" y="62" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="30" font-weight="800" text-anchor="start" dominant-baseline="middle" letter-spacing="2">NEUVA</text>
+        <text x="100" y="88" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start" dominant-baseline="middle" letter-spacing="6" fill="#666666">FORGE</text>
+    </g>
+</svg>

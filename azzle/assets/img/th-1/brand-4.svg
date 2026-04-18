@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+    <g fill="#1A1A1A">
+        <!-- Abstract Travel / Speed Lines Icon -->
+        <path d="M40 70 L75 50 L85 55 L40 80" fill="#1A1A1A"/>
+        <path d="M45 45 L70 35 L75 40 L45 50" fill="#1A1A1A"/>
+        
+        <!-- Text Lockup -->
+        <text x="100" y="62" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="900" text-anchor="start" dominant-baseline="middle" letter-spacing="2" font-style="italic">VKV</text>
+        <text x="100" y="88" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" dominant-baseline="middle" letter-spacing="4" fill="#666666" font-style="italic">TRAVELS</text>
+    </g>
+</svg>

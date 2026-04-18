@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+    <g fill="#1A1A1A">
+        <!-- Minimalist Shield / Education Icon -->
+        <path d="M45 40 L60 30 L75 40 V65 C75 75 60 85 60 85 C60 85 45 75 45 65 Z" stroke="#1A1A1A" stroke-width="4" stroke-linejoin="round" fill="none"/>
+        <path d="M60 45 V75" stroke="#1A1A1A" stroke-width="2" fill="none"/>
+        
+        <!-- Text Lockup -->
+        <text x="100" y="62" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="800" text-anchor="start" dominant-baseline="middle" letter-spacing="1">MONTFORT</text>
+        <text x="100" y="88" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" text-anchor="start" dominant-baseline="middle" letter-spacing="5" fill="#666666">SCHOOL</text>
+    </g>
+</svg>

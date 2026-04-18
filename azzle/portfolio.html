@@ -1,0 +1,534 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Nextology Innovation — Our Work & Case Studies</title>
+    <meta name="description"
+        content="Explore Nextology Innovation's portfolio of mobile apps, web platforms, cloud solutions, AI projects, and digital marketing campaigns for clients across industries." />
+
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link href="assets/fonts/fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/menu.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+        /* Filter Tabs */
+        .filter-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+
+        .filter-tab {
+            padding: 10px 24px;
+            border: 2px solid #e5e5e5;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: transparent;
+            color: #555;
+        }
+
+        .filter-tab:hover,
+        .filter-tab.active {
+            background: #000;
+            border-color: #000;
+            color: #fff;
+        }
+
+        /* Portfolio Cards */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px;
+        }
+
+        @media (min-width: 640px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .portfolio-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #f8f4f0;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .portfolio-card-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s;
+        }
+
+        .portfolio-card:hover .portfolio-card-img {
+            transform: scale(1.04);
+        }
+
+        .portfolio-card-body {
+            padding: 24px;
+            background: #fff;
+            border-top: none;
+            min-height: 210px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-tag {
+            display: inline-block;
+            background: #f0ede8;
+            border-radius: 50px;
+            padding: 4px 14px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #ff5e3a;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-card h4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 8px;
+        }
+
+        .portfolio-card p {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+
+        .portfolio-card a.cta-link {
+            font-size: 13px;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.3s;
+        }
+
+        .portfolio-card:hover a.cta-link {
+            color: #ff5e3a;
+        }
+
+        /* Stats strip */
+        .stats-strip {
+            background: #000;
+            padding: 48px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: #ff5e3a;
+            display: block;
+        }
+
+        .stat-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper relative z-[1] bg-white">
+        <!-- Header -->
+        <header class="site-header site-header--absolute is--white py-3" id="sticky-menu">
+            <div class="global-container">
+                <div class="flex items-center justify-between gap-x-8">
+                    <a href="index.html">
+                        <img src="assets/img/logo-dark.png" alt="Nextology Innovation" width="96" height="24" />
+                    </a>
+                    <div class="menu-block-wrapper">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu-block" id="append-menu-header">
+                            <div class="mobile-menu-head">
+                                <div class="go-back">
+                                    <img class="dropdown-icon" src="assets/img/icon-black-long-arrow-right.svg"
+                                        alt="back" width="16" height="16" />
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                                                        <ul class="site-menu-main">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link-item">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link-item">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="services.html" class="nav-link-item">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="portfolio.html" class="nav-link-item">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pricing.html" class="nav-link-item">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link-item">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="faq-2.html" class="nav-link-item">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link-item">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="book-a-call.html"
+                            class="button hidden rounded-[50px] border-black bg-black text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white lg:inline-block">Book
+                            a Call</a>
+                        <div class="block lg:hidden">
+                            <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                                <span></span><span></span><span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-wrapper relative overflow-hidden">
+            <!-- Breadcrumb -->
+            <section id="section-breadcrumb">
+                <div class="breadcrumb-wrapper">
+                    <div class="global-container">
+                        <div class="breadcrumb-block">
+                            <h1 class="breadcrumb-title">Our Portfolio</h1>
+                            <ul class="breadcrumb-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li>Portfolio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Strip -->
+            <div class="stats-strip">
+                <div class="global-container">
+                    <div class="grid grid-cols-2 gap-8 lg:grid-cols-4">
+                        <div class="stat-item">
+                            <span class="stat-number">225+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Industries Served</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Section -->
+            <section class="portfolio-section py-20 xl:py-[130px]">
+                <div class="global-container">
+                    <div class="jos mb-12 text-center">
+                        <div class="mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-[700px]">
+                            <h2 class="mb-4">Work That Speaks for Itself</h2>
+                            <p class="text-lg text-gray-500">A selection of our most impactful projects across mobile,
+                                web, cloud, AI, and digital marketing.</p>
+                        </div>
+                    </div>
+
+                    <!-- Filter Tabs -->
+                    <div class="filter-tabs">
+                        <button class="filter-tab active" onclick="filterPortfolio('all', this)">All Work</button>
+                        <button class="filter-tab" onclick="filterPortfolio('mobile', this)">Mobile Apps</button>
+                        <button class="filter-tab" onclick="filterPortfolio('web', this)">Web Platforms</button>
+                        <button class="filter-tab" onclick="filterPortfolio('cloud', this)">Cloud &amp; DevOps</button>
+                        <button class="filter-tab" onclick="filterPortfolio('ai', this)">AI &amp; Chatbot</button>
+                        <button class="filter-tab" onclick="filterPortfolio('marketing', this)">Digital
+                            Marketing</button>
+                    </div>
+
+                    <!-- Portfolio Grid -->
+                    <div class="portfolio-grid" id="portfolio-grid">
+
+                        <!-- Client 1 -->
+                        <div class="jos portfolio-card" data-category="web" data-jos_animation="fade-up"
+                            data-jos_delay="0.1">
+                            <div style="overflow:hidden;height:240px;">
+                                <img src="assets/img/th-1/port-rent.png" alt="Rent and Sell Reality"
+                                    class="portfolio-card-img" />
+                            </div>
+                            <div class="portfolio-card-body">
+                                <span class="portfolio-tag">Web Platform</span>
+                                <h4>Rent and Sell Reality</h4>
+                                <p>Modern real estate platform built for seamless property browsing, advanced dynamic filtering, and end-to-end lead generation workflows.</p>
+                                <a href="https://www.rentandsellreality.in/" target="_blank" class="cta-link">Visit Website →</a>
+                            </div>
+                        </div>
+
+                        <!-- Client 2 -->
+                        <div class="jos portfolio-card" data-category="web" data-jos_animation="fade-up"
+                            data-jos_delay="0.15">
+                            <div style="overflow:hidden;height:240px;">
+                                <img src="assets/img/th-1/port-neuva.png" alt="Neuva Forge"
+                                    class="portfolio-card-img" />
+                            </div>
+                            <div class="portfolio-card-body">
+                                <span class="portfolio-tag">Web Platform</span>
+                                <h4>Neuva Forge</h4>
+                                <p>Professional corporate web presence focusing on industrial branding, global digital reach, and secure client portals.</p>
+                                <a href="https://www.neuva-forge.com/" target="_blank" class="cta-link">Visit Website →</a>
+                            </div>
+                        </div>
+
+                        <!-- Client 3 -->
+                        <div class="jos portfolio-card" data-category="web" data-jos_animation="fade-up"
+                            data-jos_delay="0.2">
+                            <div style="overflow:hidden;height:240px;">
+                                <img src="assets/img/th-1/port-hiba.png" alt="Hiba General Trading"
+                                    class="portfolio-card-img" />
+                            </div>
+                            <div class="portfolio-card-body">
+                                <span class="portfolio-tag">Web Platform</span>
+                                <h4>Hiba General Trading</h4>
+                                <p>Corporate site for a Dubai-based general trading company featuring categorized catalogs, secure supply chain forms, and multilingual support.</p>
+                                <a href="https://www.hibagt.ae/" target="_blank" class="cta-link">Visit Website →</a>
+                            </div>
+                        </div>
+
+                        <!-- Client 4 -->
+                        <div class="jos portfolio-card" data-category="cloud" data-jos_animation="fade-up"
+                            data-jos_delay="0.25">
+                            <div style="overflow:hidden;height:240px;">
+                                <img src="assets/img/th-1/port-vkv.png" alt="VKV Travels"
+                                    class="portfolio-card-img" />
+                            </div>
+                            <div class="portfolio-card-body">
+                                <span class="portfolio-tag">Cloud &amp; DevOps</span>
+                                <h4>VKV Travels</h4>
+                                <p>High-performance web server provisioning and robust cloud infrastructure maintenance ensuring 99.9% uptime for their online bus ticket booking platform.</p>
+                                <a href="https://www.vkvtravels.in/" target="_blank" class="cta-link">Explore Platform →</a>
+                            </div>
+                        </div>
+
+                        <!-- Client 5 -->
+                        <div class="jos portfolio-card" data-category="cloud" data-jos_animation="fade-up"
+                            data-jos_delay="0.3">
+                            <div style="overflow:hidden;height:240px;">
+                                <img src="assets/img/th-1/port-montfort.png" alt="Montfort School"
+                                    class="portfolio-card-img" />
+                            </div>
+                            <div class="portfolio-card-body">
+                                <span class="portfolio-tag">Cloud &amp; DevOps</span>
+                                <h4>Montfort School</h4>
+                                <p>Secure, scalable server hosting solutions and infrastructure management powering mission-critical educational institution portals and databases.</p>
+                                <a href="https://montforticse.in/" target="_blank" class="cta-link">Explore Portal →</a>
+                            </div>
+                        </div>
+
+</div>
+
+                    <!-- Load More -->
+                    <div class="mt-12 text-center">
+                        <a href="book-a-call.html"
+                            class="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">
+                            Discuss Your Project →
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="py-20 xl:py-[130px]">
+                <div class="global-container">
+                    <div class="jos rounded-[30px] bg-colorLinenRuffle p-10 text-center lg:p-16 xl:p-20">
+                        <h2 class="mb-6">Ready to Start Your Project?</h2>
+                        <p class="text-gray-500 text-lg max-w-2xl mx-auto mb-8">Tell us what you're building and we'll
+                            get back to you with a tailored strategy and quote within 24 hours.</p>
+                        <a href="book-a-call.html"
+                            class="button rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">Book
+                            a Free Consultation →</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
+            <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
+                <div class="overflow-hidden">
+                    <div class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap">
+                        <img src="assets/img/th-1/footer-text-slider-icon.svg" alt="footer-icon" width="60" height="60"
+                            class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+                        <div
+                            class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                            Let's Build Something Remarkable</div>
+                        <img src="assets/img/th-1/footer-text-slider-icon.svg" alt="footer-icon" width="60" height="60"
+                            class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+                        <div
+                            class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                            Let's Build Something Remarkable</div>
+                    </div>
+                </div>
+            </div>
+            <div class="global-container">
+                <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+                <div
+                    class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
+                    <div class="flex flex-col gap-y-6">
+                        <a href="index.html" class="inline-block"><img src="assets/img/th-1/logo.png"
+                                alt="Nextology Innovation" width="96" height="24" /></a>
+                        <p>Nextology Innovation pioneers the future of cloud computing and digital transformation,
+                            delivering enterprise-grade solutions for businesses worldwide.</p>
+                        <p>Email: <a
+                                href="mailto:contact@nextologyinnovations.com">contact@nextologyinnovations.com</a><br />Phone:
+                            <a href="tel:+918925017127">+91 89250 17127</a></p>
+                    </div>
+                    <div class="flex flex-col gap-y-6">
+                        <h4 class="text-[21px] font-semibold capitalize text-black">Primary Pages</h4>
+                        <ul class="flex flex-col gap-y-[10px] capitalize">
+                        <ul class="flex flex-col gap-y-[10px] capitalize">
+                            <li>
+                                <a href="index.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">About Us</a>
+                            </li>
+                            <li>
+                                <a href="services.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Services</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="blog.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Blog</a>
+                            </li>
+                            <li>
+                                <a href="faq-2.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-y-6">
+                        <h4 class="text-[21px] font-semibold capitalize text-black">Our Services</h4>
+                        <ul class="flex flex-col gap-y-[10px] capitalize">
+                            <li><a href="services.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Mobile App
+                                    Development</a></li>
+                            <li><a href="services.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Web
+                                    Development</a></li>
+                            <li><a href="services.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">Cloud
+                                    &amp; DevOps</a></li>
+                            <li><a href="services.html"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">AI &amp;
+                                    Chatbot Development</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-y-6">
+                        <h4 class="text-[21px] font-semibold capitalize text-black">Get in Touch</h4>
+                        <ul class="flex flex-col gap-y-3">
+                            <li>172A, Bharathipuram, Chrompet, Chennai, India</li>
+                            <li><a href="mailto:contact@nextologyinnovations.com"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">contact@nextologyinnovations.com</a>
+                            </li>
+                            <li><a href="tel:+918925017127"
+                                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed">+91 89250
+                                    17127</a></li>
+                        </ul>
+                        <div class="flex gap-4 mt-2">
+                            <a href="https://www.instagram.com/nextologyinnovation" target="_blank"
+                                class="hover:text-colorOrangyRed">Instagram</a>
+                            <a href="https://in.linkedin.com/company/nextology-innovations" target="_blank"
+                                class="hover:text-colorOrangyRed">LinkedIn</a>
+                            <a href="https://www.facebook.com/share/1UL7126grh/" target="_blank"
+                                class="hover:text-colorOrangyRed">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+                <div class="py-9 text-center">
+                    <p>&copy; Copyright 2025, All Rights Reserved by Nextology Innovation</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        function filterPortfolio(category, btn) {
+            // Update active tab
+            document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Show/hide cards
+            document.querySelectorAll('.portfolio-card').forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
